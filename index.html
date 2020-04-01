@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Optimal Contribution Selection</title>
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <link rel="stylesheet" href="./CSS/reset.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Archivo&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <img src="./images/PashaBank.png" alt="Pasha Bank" />
+    </header>
+    <main>
+        <div class="frame">
+      <section>
+        <div class="window">
+        <h1>Optimal Contribution Selection</h1>
+        <div class="data">
+          <p>Amount of Deposit</p>
+          <input type="number" id="deposit" size="30" required />
+        </div>
+        <div class="data">
+          <p>Amount of Monthly Replenishment</p>
+          <input type="number" id="monthlyAdd" size="30" required />
+        </div>
+        <div class="data">
+          <p>Deposit Term (months)</p>
+          <input type="number" id="term" size="30" required />
+        </div>
+        <div class="data">
+            <p>Currency</p>
+            <select id="currencySel">
+              <option id="dollar">USD</option>
+              <option id="rubl">RUB</option>
+            </select>
+        <div class="my-btn">
+          <button id="buttonCalculate" type="button">Selection</button>
+        </div>
+        <div id="error"></div>
+        </div>
+      </section>
+      </div>
+      <div id='tableFrame'></div>
+    </main>
+    <script src="./JS/sample.js"></script>
+    <script src="./JS/data.js"></script>
+  </body>
+</html> 
